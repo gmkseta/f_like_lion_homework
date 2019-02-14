@@ -1,0 +1,12 @@
+
+<a href="{% url 'home' %}"> ㄷㅏ시 하기 </a>
+
+<h1>{{total}} 개의 단어</h1>
+<h1>입력한 텍스트</h1>
+{{ fulltext }}
+
+<h1>단어 카운트</h1>
+{% for word, countTotal in dictionary %}
+    {{ word }} - {{ countTotal }}
+    <br>
+{% endfor %}

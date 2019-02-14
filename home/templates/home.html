@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, initial-scale=1, maximum-scale=2, user-scalable=no" name="viewport" />
+    <meta content="Semantic-UI-Forest, collection of design, themes and templates for Semantic-UI." name="description" />
+    <meta content="Semantic-UI, Theme, Design, Template" name="keywords" />
+    <meta content="PPType" name="author" />
+    <meta content="#ffffff" name="theme-color" />
+    <title>과제하는겸 시멘틱이나 보자</title>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+
+  </head>
+  <body>
+    <div class="ui large top fixed hidden menu">
+      <div class="ui container">
+        <a class="active item">Home</a><a class="item" href="{% url 'about' %}">About</a><a class="item">Company</a><a class="item">Careers</a>
+        <div class="right menu">
+          <div class="item">
+            <a class="ui button">Log in</a>
+          </div>
+          <div class="item">
+            <a class="ui primary button">Sign Up</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Sidebar Menu-->
+    <div class="ui vertical inverted sidebar menu">
+      <a class="active item">Home</a><a class="item" href="{% url 'about' %}">About</a><a class="item">Company</a><a class="item">Careers</a><a class="item">Login</a><a class="item">Signup</a>
+    </div>
+    <!--Page Contents-->
+    <div class="pusher">
+      <div class="ui inverted vertical masthead center aligned segment">
+        <div class="ui container">
+          <div class="ui large secondary inverted pointing menu">
+            <a class="toc item"><i class="sidebar icon"></i></a><a class="active item">Home</a><a class="item" href="{% url 'about' %}">About</a><a class="item">Company</a><a class="item">Careers</a>
+            <div class="right item">
+              <a class="ui inverted button">Log in</a><a class="ui inverted button">Sign Up</a>
+            </div>
+          </div>
+        </div>
+        <div class="ui text container">
+          <h1 class="ui inverted header">
+            Dongguk University
+          </h1>
+          <h2>
+            아 졸리다
+          </h2>
+          <div class="ui huge primary button">
+            <a href="https://dongguk.likelion.org" style="color:white">
+              GO<i class="right arrow icon"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="ui vertical stripe segment">
+        <div class="ui middle aligned stackable grid container">
+          <div class="row">
+            <div class="eight wide column">
+              <h3 class="ui header">
+                WORD COUNT
+              </h3>
+              
+                <div class="ui form">
+                  <div class="field">
+                    <textarea name='fulltext' id="fulltext">
+                      About Swift
+
+                      Swift is a general-purpose programming language built using a modern approach to safety, performance, and software design patterns.
+                      
+                      The goal of the Swift project is to create the best available language for uses ranging from systems programming, to mobile and desktop apps, scaling up to cloud services.
+                      
+                      Most importantly, Swift is designed to make writing and maintaining *correct* programs easier for the developer.                       
+                      
+                      To achieve this goal, we believe that the most **obvious** way to write Swift code must also be:
+                      
+                      Safe The most obvious way to write code should also **behave** in a safe manner.
+                      
+                      Undefined behavior is the enemy of safety, and developer mistakes should be caught before software is in production. 
+
+                      Opting for safety sometimes means Swift will feel **strict**, but we believe that **clarity** saves time in the long run.
+                      
+                      Fast. Swift is intended as a replacement for C-based languages (C, C++, and Objective-C).
+                    
+                      As such, Swift must be comparable to those languages in performance for most tasks. 
+                                            
+                      There are lots of languages with novel features — being fast is rare.
+                      
+                      But Swift is never done. 
+                      
+                      Tools are a critical part of the Swift ecosystem.
+                      
+                      Tools can make programming so much more powerful, like Swift-based playgrounds do in Xcode, or a web-based REPL can when working with Linux server-side code.
+                    
+                      Swift includes features that make code easier to read and write, while giving the developer the control needed in a true systems programming language. 
+    
+                      Swift supports **inferred** types to make code cleaner and less **prone** to mistakes, and modules **eliminate** headers and provide namespaces. 
+                      
+                      Memory is managed automatically, and you don’t even need to type semi-colons.
+                      
+                      Swift also borrows from other languages, for instance named parameters brought forward from Objective-C are expressed in a clean syntax that makes APIs in Swift easy to read and maintain.
+                      
+                      The features of Swift are designed to work together to create a language that is powerful, yet fun to use. Some additional features of Swift include:
+                      
+                      - Closures unified with function pointers
+                      - Tuples and multiple return values
+                      - Generics
+                      - Fast and concise iteration over a range or collection
+                      - Structs that support methods, extensions, and protocols
+                      - Functional programming patterns, e.g., map and filter
+                      - Powerful error handling built-in
+                      - Advanced control flow with `do`, `guard`, `defer`, and `repeat` keywords
+                    
+                      Swift was designed from the outset to be safer than C-based languages, and eliminates entire classes of unsafe code. Variables are always initialized before use, arrays and integers are checked for overflow, and memory is managed automatically. Syntax is tuned to make it easy to define your intent — for example, simple three-character keywords define a variable (`var`) or constant (`let`).
+                      
+                      Another safety feature is that by default Swift objects can never be `nil`, and trying to make or use a `nil` object will results in a compile-time error. This makes writing code much cleaner and safer, and prevents a common cause of runtime crashes. However, there are cases where `nil` is appropriate, and for these situations Swift has an innovative feature known as **optionals**. An optional may contain `nil`, but Swift syntax forces you to safely deal with it using `?` to indicate to the compiler you understand the behavior and will handle it safely.
+                      
+                      On December 3, 2015, the Swift language, supporting libraries, debugger, and package manager were published under the [Apache 2.0 license with a Runtime Library Exception](https://swift.org/LICENSE.txt), and Swift.org was created to host the project. The source code is [hosted on GitHub](http://github.com/apple) where it is easy for anyone to get the code, build it themselves, and even create pull requests to contribute code back to the project. Everyone is welcome, even just to [file a bug report](https://swift.org/contributing/#reporting-bugs). There are excellent [Getting Started](https://swift.org/getting-started/) guides available here on the site as well.
+                      
+                      The project is governed by a core team of engineers that drive the strategic direction by working with the community, and a collection of code owners responsible for the day-to-day project management. Technical leaders come from the community of contributors and anyone can earn the right to lead an area of Swift. The [Community Guidelines](https://swift.org/community/) includes detailed information on how the Swift community is managed.
+                      
+                      The Swift language is managed as a collection of projects, each with its own repositories. The current list of projects includes:
+                      
+                      
+                      One of the most exciting aspects of developing Swift in the open is knowing that it is now free to be ported across a wide range of platforms, devices, and use cases.
+                      
+                      Our goal is to provide source compatibility for Swift across all platforms, even though the actual implementation mechanisms may differ from one platform to the next. The primary example is that the Apple platforms include the Objective-C runtime, which is required to access Apple platform frameworks such as UIKit and AppKit. On other platforms, such as Linux, no Objective-C runtime is present, because it isn’t necessary.
+                      
+                      The aims to extend the cross-platform capabilities of Swift by providing portable implementations of fundamental Apple frameworks (such as Foundation) without dependencies on the Objective-C runtime. Although the core libraries are in an early stage of development, they will eventually provide improved source compatibility for Swift code across all platforms.
+                       
+                      Open-source Swift can be used on the Mac to target all of the Apple platforms: iOS, macOS, watchOS, and tvOS. Moreover, binary builds of open-source Swift integrate with the Xcode developer tools, including complete support for the Xcode build system, code completion in the editor, and integrated debugging, allowing anyone to experiment with the latest Swift developments in a familiar Cocoa and Cocoa Touch development environment.
+                     
+                      Open-source Swift can be used on Linux to build Swift libraries and applications. The open-source binary builds provide the Swift compiler and standard library, Swift REPL and debugger (LLDB), and the [core libraries](https://swift.org/core-libraries/), so one can jump right in to Swift development.
+                      
+                      We can’t wait to see the new places we can bring Swift—together. We truly believe that this language that we love can make software safer, faster, and easier to maintain. We’d love your help to bring Swift to even more computing platforms.</textarea>
+                  </div>                
+                </div>
+                <br>
+                <div class="center aligned column">
+                  <input type="submit" value="Count!" class="ui huge button primary" id="ajax_test">
+                </div>  
+              
+            </div>
+            <div class="eight wide right floated column" style="max-height: 30em; overflow-y: auto; ">
+              <table id="recv_result" class= "ui celled table">
+                  
+              </table>
+            </div>
+          </div>
+          
+          
+        </div>
+      </div>
+      <div class="ui vertical stripe segment">
+        <div class="ui text container" style="min-height: 30em">
+            <h1>입력한 텍스트</h1>
+            <div id="recv_full"></div>
+        </div>
+      </div>
+      <div class="ui inverted vertical footer segment">
+        
+      </div>
+    </div>
+    
+    <style type="text/css">
+      .hidden.menu {
+        display: none;
+      }
+      
+      .masthead.segment {
+        min-height: 600px;
+        padding: 1em 0em;
+      }
+      .masthead .logo.item img {
+        margin-right: 1em;
+      }
+      .masthead .ui.menu .ui.button {
+        margin-left: 0.5em;
+      }
+      .masthead h1.ui.header {
+        margin-top: 2em;
+        margin-bottom: 0em;
+        font-size: 4em;
+        font-weight: normal;
+      }
+      .masthead h2 {
+        font-size: 1.7em;
+        font-weight: normal;
+      }
+      #recv_result tr{
+        word-break:break-all;
+      }
+      .ui.vertical.stripe {
+        padding: 1em 0em;
+      }
+      .ui.vertical.stripe h3 {
+        font-size: 2em;
+      }
+      .ui.vertical.stripe .button + h3,
+      .ui.vertical.stripe p + h3 {
+        margin-top: 3em;
+      }
+      .ui.vertical.stripe .floated.image {
+        clear: both;
+      }
+      .ui.vertical.stripe p {
+        font-size: 1.33em;
+      }
+      .ui.vertical.stripe .horizontal.divider {
+        margin: 3em 0em;
+      }
+      
+      .quote.stripe.segment {
+        padding: 0em;
+      }
+      .quote.stripe.segment .grid .column {
+        padding-top: 5em;
+        padding-bottom: 5em;
+      }
+      
+      .footer.segment {
+        padding: 5em 0em;
+      }
+      
+      .secondary.pointing.menu .toc.item {
+        display: none;
+      }
+      
+      @media only screen and (max-width: 700px) {
+        .ui.fixed.menu {
+          display: none !important;
+        }
+        .secondary.pointing.menu .item,
+        .secondary.pointing.menu .menu {
+          display: none;
+        }
+        .secondary.pointing.menu .toc.item {
+          display: block;
+        }
+        .masthead.segment {
+          min-height: 350px;
+        }
+        .masthead h1.ui.header {
+          font-size: 2em;
+          margin-top: 1.5em;
+        }
+        .masthead h2 {
+          margin-top: 0.5em;
+          font-size: 1.5em;
+        }
+      }
+    </style>
+    <script>
+      $(document)
+        .ready(function() {
+          // fix menu when passed
+          $('.masthead')
+            .visibility({
+              once: false,
+              onBottomPassed: function() {
+                $('.fixed.menu').transition('fade in');
+              },
+              onBottomPassedReverse: function() {
+                $('.fixed.menu').transition('fade out');
+              }
+            })
+          ;
+      
+          // create sidebar and attach to menu open
+          $('.ui.sidebar')
+            .sidebar('attach events', '.toc.item')
+          ;
+        })
+      ;
+    </script>
+  </body>
+</html>
+<script>
+  $("#ajax_test").click(function(){
+    var full_text = $("#fulltext").val()
+    $.ajax({
+      type: 'GET',
+      url: "{% url 'count'%}",
+      data : {fulltext: full_text },
+      success: function(data){
+        $("#recv_full").fadeOut().promise().done(
+          function(){
+            $("#recv_full").html(data["fulltext"])
+            $("#recv_full").fadeIn(1000)}
+        );        
+        $("#recv_result").fadeOut().promise().done(
+          function(){
+            input_html = "<table class='ui celled table'>"
+
+            
+
+            data["dictionary"]
+            
+            $.each(data["dictionary"], function(key,value){
+              if(key%2 == 0){
+                input_html += "<tr>"
+              }
+              input_html+= ("<td>" + value[0] + "</td><td>" + value[1] + "</td>")
+              if (key%2 == 1 ){
+                input_html += "</tr>"
+              }
+            })
+            $("#recv_result").html(input_html)
+            $("#recv_result").fadeIn(1000)
+          }
+        )
+      }
+
+
+    })
+    
+  })
+</script>
