@@ -146,7 +146,7 @@
               
             </div>
             <div class="eight wide right floated column" style="max-height: 30em; overflow-y: auto; ">
-              <table id="recv_result" class= "ui celled table">
+              <table id="recv_result" class= "ui celled table" style=" word-wrap: break-word;">
                   
               </table>
             </div>
@@ -156,7 +156,7 @@
         </div>
       </div>
       <div class="ui vertical stripe segment">
-        <div class="ui text container" style="min-height: 30em">
+        <div class="ui text container" style="height: 30em; overflow-y: auto; "">
             <h1>입력한 텍스트</h1>
             <div id="recv_full"></div>
         </div>
@@ -167,6 +167,9 @@
     </div>
     
     <style type="text/css">
+    #recv_result td{
+      min-width: 50px;
+    }
       .hidden.menu {
         display: none;
       }
